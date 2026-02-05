@@ -10,6 +10,7 @@ module com.projekt.personalfinacemanager {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.projekt.personalfinacemanager to javafx.fxml;
     exports com.projekt.personalfinacemanager;
