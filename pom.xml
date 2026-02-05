@@ -140,7 +140,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.projekt.personalfinacemanager/com.projekt.personalfinacemanager.HelloApplication
+                                com.projekt.personalfinacemanager/com.projekt.personalfinacemanager.FinanzManagerApp
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

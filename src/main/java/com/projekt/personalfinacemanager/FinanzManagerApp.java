@@ -1,6 +1,5 @@
 package com.projekt.personalfinacemanager;
 
-import com.projekt.personalfinacemanager.database.DatabaseConnection;
 import com.projekt.personalfinacemanager.database.TransaktionDAO;
 import com.projekt.personalfinacemanager.model.Transaktion;
 import javafx.application.Application;
@@ -11,13 +10,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class HelloApplication extends Application {
+public class FinanzManagerApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
+       stage.setTitle("Mein Finanzmanager");
         stage.show();
     }
 
@@ -31,6 +27,6 @@ public class HelloApplication extends Application {
 
 //        dao.speicherTransaktion(testBuchung);
 
-
+        launch(args);
     }
 }
