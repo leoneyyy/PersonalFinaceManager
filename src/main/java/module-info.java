@@ -11,6 +11,7 @@ module com.projekt.personalfinacemanager {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires com.opencsv;
 
     opens com.projekt.personalfinacemanager to javafx.fxml;
     exports com.projekt.personalfinacemanager;

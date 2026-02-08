@@ -25,7 +25,8 @@ public class Transaktion {
     }
 
     public void setKategorie(String kategorie) {
-        this.kategorie = kategorie;
+        String[] splitKategorie = kategorie.split(" ");
+        this.kategorie = splitKategorie[0];
     }
 
     public void setDatum(LocalDate datum) {
@@ -49,7 +50,8 @@ public class Transaktion {
     }
 
     public String getKategorie() {
-        return kategorie;
+        String[] splitKategorie = kategorie.split(" ");
+        return splitKategorie[0];
     }
 
     public LocalDate getDatum() {

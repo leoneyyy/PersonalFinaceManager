@@ -44,4 +44,14 @@ public class TransaktionDAO {
         }
         return alle;
     }
+
+    public void loescheAlleTransaktionen() {
+        String sql = "DELETE FROM Transaktion;";
+
+        try (Connection conn = DatabaseConnection.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
